@@ -7,7 +7,10 @@ let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
 let bgm = new Audio('sounds effect/bgm.mp3');
 bgm.loop = true;
-bgm.volume = 0.3;
+sound_point.volume = 1.0;
+sound_die.volume = 1.0;
+bgm.volume = 0.7; // sesuaikan agar tidak terlalu mengganggu
+
 
 // Mendapatkan properti bird dan background
 let bird_props = bird.getBoundingClientRect();
